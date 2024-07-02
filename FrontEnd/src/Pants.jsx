@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import OfferHeading from "./OfferHeading";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Pants = () => {
   const [pants, setPants] = useState([]);
@@ -38,6 +39,7 @@ const Pants = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

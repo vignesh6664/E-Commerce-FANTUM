@@ -22,16 +22,16 @@ const Cart = () => {
     });
   }, []);
 
-  // useEffect(() => {
-  //   const savedCart = JSON.parse(localStorage.getItem("cart"));
-  //   if (savedCart) {
-  //     setCart(savedCart);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const savedCart = JSON.parse(localStorage.getItem("cart"));
+    if (savedCart) {
+      setCart(savedCart);
+    }
+  }, []);
 
-  // useEffect(() => {
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-  // }, [cart]);
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
   const removeCartItem = (id) => {
     axios
       .delete(`http://localhost:3000/cart/${id}`)

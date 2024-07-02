@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import OfferHeading from "./OfferHeading";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Tshirts = () => {
   // const api_url = process.env.API_URL;
@@ -36,6 +37,7 @@ const Tshirts = () => {
             </div>
           ))}
         </div>
+        <Footer/>
       </div>
     </div>
   );
